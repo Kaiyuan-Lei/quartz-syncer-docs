@@ -95,4 +95,11 @@ const config: QuartzConfig = {
   },
 }
 
-export default config
+export const config: QuartzConfig = {
+  title: "Kaii 的知识库",  // 自定义标题
+  enableGraph: true,       // 启用交互 Graph View
+  enableSearch: true,      // 全局搜索笔记
+  enableSPA: true,         // 单页应用，提升 Graph 流畅
+  baseUrl: "kaii.eth",     // ENS 域名
+  ignorePatterns: ["private/*.md"],  // 隐藏私有笔记
+};
